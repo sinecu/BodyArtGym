@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <head>
+        <title>BodyArtGym</title>
+    </head>
+    
+    <body>
+        <header>
+            <a href="index.html" class="logo">Body-Art GYM</a>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Acasa</a></li>
+                    <li><a href="despre.html">Despre</a></li>
+                    <li><a href="abonamente.html">Abonamente</a></li>
+                    <li><a href="galeriefoto.html">Galerie foto</a></li>
+                    <li><a href="suplimente.php">Suplimente</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+        <div class="container">
+            <img src="images/gohard.png" class="responsive">
+            <p>Lanseaza-te in cursa catre cea mai buna versiune a ta!</p>
+            <p>La Body-Art GYM obiectivele tale prind contur si suntem alaturi de tine pentru a atinge forma mult dorita.</p>
+            <p>Te asteptam la Body-Art GYM! Cu ambitie si perseverenta iti vei atinge toate obiectivele!</p>
+        </div>
+    </body>
+</html>

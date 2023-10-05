@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <head>
+        <title>BodyArtGym</title>
+    </head>
+    
+    <body>
+        <header>
+            <a href="index.html" class="logo">Body-Art GYM</a>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="despre.html">Despre</a></li>
+                    <li><a href="#" class="active">Abonamente</a></li>
+                    <li><a href="galeriefoto.html">Galerie foto</a></li>
+                    <li><a href="suplimente.php">Suplimente</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+        <div class="container">
+            <div class="preturi">
+                <h1>TARIFE ABONAMENTE</h1>
+                <h2>Abonamente ADULTI</h2>
+                <ul style="list-style-type: none">
+                    <li>1 luna - 110 lei</li>
+                    <li>3 luni - 280 l2i</li>
+                    <li>6 luni - 550 lei</li>
+                    <li>1 an - 1100 lei</li>
+                </ul>
+                <h2>Abonamente ELEVI</h2>
+                <ul style="list-style-type: none">
+                    <li>1 luna - 90 lei</li>
+                    <li>3 luni - 230 l2i</li>
+                    <li>6 luni - 450 lei</li>
+                    <li>1 an - 900 lei</li>
+                </ul>
+                <h2>2 saptamani - 70 lei</h2>
+            </div>
+        </div>
+    </body>
+</html>

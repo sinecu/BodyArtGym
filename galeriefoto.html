@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <head>
+        <title>BodyArtGym</title>
+    </head>
+    
+    <body>
+        <header>
+            <a href="index.html" class="logo">Body-Art GYM</a>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="despre.html">Despre</a></li>
+                    <li><a href="abonamente.html">Abonamente</a></li>
+                    <li><a href="#" class="active">Galerie foto</a></li>
+                    <li><a href="suplimente.php">Suplimente</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+        <div class="container" column-count: 4>
+            <div class="galerie">
+                <img src="images/1.jpg">
+                <img src="images/2.jpg">
+                <img src="images/3.jpg">            
+                <img src="images/4.jpg">
+                <img src="images/5.jpg">
+                <img src="images/6.jpg">
+                <img src="images/7.jpg">
+                <img src="images/8.jpg">
+                <img src="images/9.jpg">
+                <img src="images/10.jpg">
+            </div>
+        </div>
+    </body>
+</html>
